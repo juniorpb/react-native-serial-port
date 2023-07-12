@@ -19,6 +19,8 @@ const SerialPortComponent = () => {
 
       if (devices.length < 1) {
         Alert.alert("Not Devices");
+      } else {
+        Alert.alert("Devices ecnontrado!! sucesso");
       }
       // Send request for the first available device
       const granted = await UsbSerialManager.tryRequestPermission(
